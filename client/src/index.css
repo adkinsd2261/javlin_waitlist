@@ -13,7 +13,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(271, 81%, 56%);
+  --primary: hsl(231, 100%, 66%);
   --primary-foreground: hsl(0, 0%, 98%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -21,14 +21,15 @@
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
-  --radius: 0.5rem;
+  --ring: hsl(231, 100%, 66%);
+  --radius: 0.75rem;
   
-  /* Javlin.ai custom colors */
-  --javlin-purple: hsl(271, 81%, 56%);
-  --javlin-blue: hsl(217, 91%, 60%);
-  --dark-navy: hsl(220, 13%, 18%);
-  --dark-slate: hsl(215, 28%, 17%);
+  /* Javlin.ai premium colors */
+  --electric-blue: hsl(231, 100%, 66%);
+  --gradient-start: hsl(230, 21%, 16%);
+  --gradient-end: hsl(232, 27%, 20%);
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
 }
 
 .dark {
@@ -61,19 +62,36 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
 }
 
 @layer utilities {
-  .gradient-javlin {
-    background: linear-gradient(135deg, var(--javlin-purple) 0%, var(--javlin-blue) 100%);
+  .gradient-bg {
+    background: linear-gradient(135deg, #181B2B 0%, #232342 100%);
+    min-height: 100vh;
   }
   
-  .gradient-dark {
-    background: linear-gradient(135deg, var(--dark-navy) 0%, var(--dark-slate) 100%);
+  .gradient-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+  }
+  
+  .electric-blue {
+    background: var(--electric-blue);
+    box-shadow: 0 0 20px rgba(81, 81, 255, 0.3);
+  }
+  
+  .electric-blue:hover {
+    box-shadow: 0 0 30px rgba(81, 81, 255, 0.4);
   }
   
   .text-gradient-javlin {
-    @apply bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent;
+  }
+  
+  .input-focus {
+    @apply focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200;
   }
 }

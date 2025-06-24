@@ -53,6 +53,8 @@ export class MemStorage implements IStorage {
     const id = this.currentWaitlistId++;
     const entry: WaitlistEntry = {
       ...insertEntry,
+      source: insertEntry.source || "landing",
+      message: insertEntry.message || null,
       id,
       createdAt: new Date(),
     };

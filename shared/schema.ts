@@ -11,6 +11,8 @@ export const users = pgTable("users", {
 export const waitlistEntries = pgTable("waitlist_entries", {
   id: serial("id").primaryKey(),
   email: text("email").notNull().unique(),
+  name: text("name").notNull(),
+  message: text("message"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   source: text("source").default("landing").notNull(), // track where signup came from
 });
@@ -22,6 +24,8 @@ export const insertUserSchema = createInsertSchema(users).pick({
 
 export const insertWaitlistEntrySchema = createInsertSchema(waitlistEntries).pick({
   email: true,
+  name: true,
+  message: true,
   source: true,
 });
 
