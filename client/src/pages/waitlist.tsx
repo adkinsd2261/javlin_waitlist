@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle } from "lucide-react";
+import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle, Database, Zap, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -97,7 +97,7 @@ export default function Waitlist() {
             <div className="pt-6">
               <Button 
                 onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-[#5151FF] hover:bg-[#6a5cff] text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg border-0 transition-all duration-200"
+                className="bg-[#5151FF] hover:bg-[#6a5cff] text-white font-semibold text-lg px-12 py-6 rounded-2xl shadow-lg border-0 transition-all duration-200 glow-effect"
               >
                 Join the Waitlist
               </Button>
@@ -202,7 +202,7 @@ export default function Waitlist() {
                 onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-white/10 hover:bg-white/15 text-white font-medium text-lg px-8 py-4 rounded-2xl border border-white/20 transition-all duration-200"
               >
-                Join the waitlist for a full product tour before launch and exclusive behind-the-scenes access
+                Join for a full product tour before launch!
               </Button>
             </div>
           </div>
