@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { z } from "zod";
-import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles } from "lucide-react";
+import { Brain, Shield, Link, Users, CheckCircle, Crown, Lock, Sparkles, Lightbulb, Code, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -139,6 +139,71 @@ export default function Waitlist() {
                   <p className="text-gray-300 leading-relaxed">{feature.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* How Javlin Works Section */}
+        <section className="py-24 px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-semibold text-white mb-4">How Javlin Works</h2>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+              {[
+                {
+                  icon: <Brain className="w-8 h-8 text-white" />,
+                  title: "MemoryOS",
+                  description: "The brain of Javlin—remembers your real work, connects the dots, and surfaces the right lesson at the right time."
+                },
+                {
+                  icon: <Lightbulb className="w-8 h-8 text-white" />,
+                  title: "Creative Mode",
+                  description: "Start new projects, capture ideas, and build moodboards—Javlin keeps your creative flow alive and every insight is remembered."
+                },
+                {
+                  icon: <Code className="w-8 h-8 text-white" />,
+                  title: "Dev Mode",
+                  description: "From code to docs, Dev Mode delivers context-aware help, debugging tips, and warnings—powered by your own project memory."
+                },
+                {
+                  icon: <MessageCircle className="w-8 h-8 text-white" />,
+                  title: "Jav Assistant",
+                  description: "More than a chatbot—your adaptive AI cofounder. It guides, reminds, and evolves with you in every workspace."
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 bg-[#5151FF]/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                      {item.icon}
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                      <p className="text-gray-300 leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* User Quote */}
+            <div className="text-center mb-12">
+              <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 lg:p-12 border border-[#5151FF]/20 max-w-4xl mx-auto">
+                <blockquote className="text-xl lg:text-2xl text-white font-medium italic leading-relaxed">
+                  "Javlin reminded me how I solved a tough bug months ago, just as I hit the same wall—saved me hours."
+                </blockquote>
+              </div>
+            </div>
+
+            {/* Secondary CTA */}
+            <div className="text-center">
+              <Button 
+                onClick={() => document.getElementById('waitlist-form')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-white/10 hover:bg-white/15 text-white font-medium text-lg px-8 py-4 rounded-2xl border border-white/20 transition-all duration-200"
+              >
+                Join the waitlist for a full product tour before launch and exclusive behind-the-scenes access
+              </Button>
             </div>
           </div>
         </section>
