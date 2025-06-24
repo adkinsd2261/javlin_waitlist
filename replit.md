@@ -21,10 +21,11 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - **Error Handling**: Centralized error middleware
 
 ### Data Storage
-- **Database**: PostgreSQL (configured via Neon serverless)
+- **Database**: PostgreSQL (Replit-managed database)
 - **ORM**: Drizzle ORM with type-safe queries
 - **Schema Management**: Drizzle Kit for migrations
 - **Validation**: Zod schemas for runtime type checking
+- **Storage Layer**: DatabaseStorage implementation with full CRUD operations
 
 ## Key Components
 
