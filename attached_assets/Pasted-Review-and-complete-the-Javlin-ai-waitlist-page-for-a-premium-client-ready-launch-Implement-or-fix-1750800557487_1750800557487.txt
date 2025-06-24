@@ -1,0 +1,66 @@
+Review and complete the Javlin.ai waitlist page for a premium, client-ready launch. Implement or fix the following:
+
+1. Background & Theme
+Use a true dark gradient: bg-gradient-to-br from-[#181B2B] to-[#232342] on the outermost container. No solid or slate backgrounds.
+
+All text white or very light gray. Font: Inter, weights 400/500/600.
+
+2. Hero Section
+Headline: “Javlin: The AI Co-founder for Next-Gen Founders”
+
+Subheadline: “The first platform that remembers your best solutions, warns you about past mistakes, and grows smarter with every project.”
+
+Large, glowing, electric blue CTA (“Join the Waitlist”), rounded-2xl, soft shadow.
+
+3. Features Section (under hero)
+Four cards/rows, each with a minimal modern icon, bold headline, and one-sentence description:
+
+MemoryOS: Proactive, intelligent memory brain for your work.
+
+Cross-Project Intelligence: Learns from all your projects, not just one.
+
+Personal Co-founder: Context-aware, adaptive support—beyond chatbots.
+
+Control & Privacy: Your data, always yours—export/edit anytime.
+
+4. Product Deep Dive / How Javlin Works (Recommended)
+Section after Features showing these as mini-cards/icon rows:
+
+MemoryOS
+
+Creative Mode
+
+Dev Mode
+
+Jav Assistant
+
+Each with icon, headline, and one-sentence description (use prior content above).
+
+Add a magic moment user quote, centered and styled as a testimonial.
+
+Bonus: “Join for a full product tour before launch!” CTA if you want to boost conversion.
+
+5. Waitlist Form
+Fields: Name (required), Email (required), “What would you want your AI cofounder to remember for you?” (optional textarea)
+
+Wide, rounded, blue focus ring, clear label above each.
+
+On submit, show a thank-you/success state.
+
+6. Founders Badge / Early Adopter
+Prominent card/banner:
+“First 1,000 signups get 30% off Pro or Premium for life and an exclusive Founders badge.”
+
+7. Footer/Privacy
+Small, centered, subtle: “Your data is safe, always exportable. No spam. Privacy-first.”
+
+8. Responsive & Polish
+Ensure every section is generously spaced (py-16 or more), looks premium on mobile and desktop, and uses modern icons (not cartoon).
+
+No “pricing,” “FAQ,” or generic sections—keep only launch-critical content.
+
+Use copy, structure, and style from the Javlin masterdoc and this checklist. Mark each section clearly in your code for future edits.
+
+Final deliverable:
+A single React+Tailwind (or your stack) page, matching every item above, client-ready for launch. If you need any copy, icons, or content, ask for it in your next step.
+

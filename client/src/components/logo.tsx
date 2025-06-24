@@ -29,9 +29,7 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
         />
       </div>
       {showText && (
-        <span className={`${textSizeClasses[size]} font-bold text-gradient-javlin`}>
-          Javlin.ai
-        </span>
+        <span className={`${textSizeClasses[size]} font-bold text-gradient-javlin`}>Javlin</span>
       )}
     </div>
   );
