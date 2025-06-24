@@ -1,0 +1,63 @@
+Build a premium, launch-ready waitlist landing page for Javlin.ai. Follow these exact requirements:
+
+Background: Use a deep, dark gradient (#181B2B to #232342 or similar), not a solid black or white. The entire page must have this gradient.
+
+Accent: Use electric blue (#5151FF) for main buttons, focus rings, and highlights.
+
+Text: White or light gray. Font: Inter (400/500/600). Headline and body text should be large and easy to read.
+
+Layout: Wide spacing, minimal, no clutter. Everything is centered and calm (Notion/Apple style).
+
+Sections (in order):
+
+Hero
+
+Headline: “Javlin: The AI Co-founder for Next-Gen Founders”
+
+Subheadline: “The first platform that remembers your best solutions, warns you about past mistakes, and grows smarter with every project.”
+
+Large, rounded CTA button: “Join the Waitlist” (electric blue, glowing soft shadow)
+
+Features/Benefits
+
+4 spaced cards/rows, each with an icon and short headline+description:
+
+MemoryOS: Proactive, intelligent memory brain
+
+Cross-Project Intelligence: Learns from all your projects
+
+Personal Co-founder: Context-aware, adaptive support
+
+Control & Privacy: Your data, always yours
+
+Waitlist Form
+
+Fields: Name (required), Email (required), “What would you want your AI cofounder to remember for you?” (optional, textarea)
+
+Inputs: Wide, softly rounded, blue focus outline, clear label above each
+
+Submit shows a thank you message (no backend needed yet)
+
+Founders Badge/Early Adopter Callout
+
+Card/banner: “First 1,000 signups get 30% off Pro or Premium for life and an exclusive Founders badge.”
+
+Footer (Privacy Statement)
+
+“Your data is safe, always exportable. No spam. Privacy-first.”
+
+Style Extras:
+
+No solid white backgrounds, no unnecessary borders.
+
+Use gentle glows or gradient overlays for a premium feel (like modern workspace tools).
+
+Mobile-first and responsive.
+
+Reference:
+
+Follow content and section structure from the “Javlin.ai Webmap v1.4” masterdoc.
+
+Prioritize clarity, calm, and intentionality over flash.
+
+Deliver a single React+Tailwind page or component called Waitlist.jsx, matching the above.
