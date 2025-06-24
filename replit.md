@@ -98,6 +98,16 @@ This is a full-stack web application for Javlin.ai's waitlist landing page. The 
 - **Port Configuration**: Server runs on port 5000, exposed as port 80
 - **Module Dependencies**: Node.js 20, Web, PostgreSQL 16
 
+## Recent Changes
+- June 24, 2025: Refactored waitlist landing page to premium design
+  - Implemented deep dark gradient background (#181B2B to #232342)
+  - Added electric blue accents (#5151FF) with glowing effects
+  - Updated Inter font with proper weights (400/500/600)
+  - Created 4-card feature section highlighting MemoryOS benefits
+  - Enhanced waitlist form with Name, Email, and optional message field
+  - Added Founders' Special badge for first 1,000 signups
+  - Applied Notion/Apple-style minimal layout with generous spacing
+
 ## Changelog
 - June 24, 2025. Initial setup
 

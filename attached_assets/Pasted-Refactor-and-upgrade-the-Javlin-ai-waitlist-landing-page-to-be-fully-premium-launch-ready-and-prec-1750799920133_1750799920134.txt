@@ -1,0 +1,76 @@
+Refactor and upgrade the Javlin.ai waitlist landing page to be fully premium, launch-ready, and precisely on-brand. Follow these step-by-step fixes:
+
+1. Background & Layout
+Change the main background to a deep, dark gradient:
+Use bg-gradient-to-br from-[#181B2B] to-[#232342] on the root <div>, replacing any solid or slate backgrounds.
+
+Ensure all text is white or very light gray. Font should be Inter, weights 400/500/600.
+
+Every section (hero, features, form, founders badge, footer) should be generously spaced (py-16 or py-24) and centered. Remove any unnecessary borders or boxes.
+
+2. Hero Section
+Headline:
+Javlin: The AI Co-founder for Next-Gen Founders
+
+Subheadline:
+The first platform that remembers your best solutions, warns you about past mistakes, and grows smarter with every project.
+
+Main CTA button:
+
+Use electric blue (bg-[#5151FF] hover:bg-[#6a5cff]), soft shadow (shadow-lg), large, and rounded (rounded-2xl text-lg font-semibold px-8 py-4).
+
+Button text: “Join the Waitlist”
+
+3. Features Section
+Add a 4-card/row feature section (centered, spaced out), each with a minimal icon, bold headline, and 1-sentence description:
+
+MemoryOS:
+Proactive, intelligent memory brain for your work.
+
+Cross-Project Intelligence:
+Learns from all your projects, not just one.
+
+Personal Co-founder:
+Context-aware, adaptive support—beyond chatbots.
+
+Control & Privacy:
+Your data, always yours—export/edit anytime.
+
+4. Waitlist Form
+Update the form fields:
+
+Name (required)
+
+Email (required)
+
+“What would you want your AI cofounder to remember for you?” (optional textarea)
+
+Inputs: Wide, softly rounded (rounded-xl), blue focus ring (focus:ring-[#5151FF]), clear label above each.
+
+On submit, display a thank-you message or success state. No backend needed for now.
+
+5. Founders Badge / Early Adopter Callout
+Below the form, add a distinct, visually-prominent card or banner:
+
+Text:
+Founders’ Special: First 1,000 signups get 30% off Pro or Premium for life and an exclusive Founders badge.
+
+Use the electric blue accent or a glowing effect to make it stand out.
+
+6. Footer / Privacy Statement
+At the very bottom, add:
+“Your data is safe, always exportable. No spam. Privacy-first.”
+
+Style it small, centered, subtle (not distracting).
+
+7. Polish & Responsive
+Review the site on mobile and desktop.
+
+All spacing, buttons, text, and inputs should scale and remain easy to read/use.
+
+Do not use any white/light backgrounds—keep the dark gradient for the whole page.
+
+Reference: Use copy, content, and tone from the “Javlin.ai Webmap v1.4” masterdoc. Prioritize clarity and calm, not flashy or generic SaaS design.
+
+Deliverable:
+A single React+Tailwind page (Waitlist.jsx or equivalent) matching all the above. Clearly comment or label each section in the code for easy review.
