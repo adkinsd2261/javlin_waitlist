@@ -187,14 +187,7 @@ export default function Waitlist() {
               ))}
             </div>
 
-            {/* User Quote */}
-            <div className="text-center mb-12">
-              <div className="bg-gradient-to-r from-[#5151FF]/10 to-[#6a5cff]/10 rounded-3xl p-8 lg:p-12 border border-[#5151FF]/20 max-w-4xl mx-auto">
-                <blockquote className="text-xl lg:text-2xl text-white font-medium italic leading-relaxed">
-                  "Javlin reminded me how I solved a tough bug months ago, just as I hit the same wall—saved me hours."
-                </blockquote>
-              </div>
-            </div>
+            
 
             {/* Secondary CTA */}
             <div className="text-center">
